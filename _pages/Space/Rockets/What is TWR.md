@@ -4,7 +4,7 @@ tags:
     - Explanation
 
 date: "2024-06-18"
-thumbnail: "/assets/img/thumbnail/sample.png"
+thumbnail: "/assets/img/thumbnail/TWR.png"
 bookmark: true
 ---
 
