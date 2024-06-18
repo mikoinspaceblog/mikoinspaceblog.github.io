@@ -11,7 +11,7 @@ The Satellites that are most used for this hobby are the American NOAA Satellite
 
 Both of them are in a low sun-synchronous and almost polar orbit, meaning the countries they fly over will vary.
 
-![Orbit](/images/orbit.gif)
+![Orbit](/assets/orbit.gif)
 
 They constantly transmit "images" of the surface of the earth, however they are not captured like typical images.
 
@@ -41,7 +41,7 @@ Receiving these images is quite simple, the most basic setup you could have cons
 
 You can get a kit with the RTL-SDR BLOG V4 and RTL-SDR V-Diapole for as low as 50€ on a website like amazon.
 
-![Kit](/images/RTL-SDR-V4-with-Dipole-Antenna-Kit.png)
+![Kit](/assets/RTL-SDR-V4-with-Dipole-Antenna-Kit.png)
 
 ### Where is the Satellite?
 
@@ -59,7 +59,7 @@ Plug your SDR into your laptop and start up your software, if you are using SDR+
 
 1.  Simply select your SDR using the Source menu from the side
 
-![Source Menu](/images/SourceMenuSDR.png)
+![Source Menu](/assets/SourceMenuSDR.png)
 
 2. Put the gain up to max
 
@@ -69,21 +69,21 @@ Now the process varies between NOAA and Meteor
 
 For NOAA, you should scroll down to recording settings and select audio
 
-![Source Menu](/images/AUDIO.png)
+![Source Menu](/assets/AUDIO.png)
 
 As soon as you see a signal like this you should press record, when it dissapears you should wait a bit and then stop recording, after this go to the decoding step.
 
-![Source Menu](/images/NOAA.png)
+![Source Menu](/assets/NOAA.png)
 
 ### METEOR M2
 
 For Meteor M2, you should select Baseband and scroll back up to select "IQ Correction"
 
-![Source Menu](/images/BASEBAND.png)
+![Source Menu](/assets/BASEBAND.png)
 
 As soon as you see a signal like this you should press record, when it dissapears you should wait a bit and then stop recording, after this go to the decoding step.
 
-![Source Menu](/images/METEOR.png)
+![Source Menu](/assets/METEOR.png)
 
 ### Decoding
 
@@ -97,19 +97,19 @@ In SatDump, select the Satellite you just recorded and import your file, then si
 
 ### NOAA
 
-![APT-A](/images/NOAAIMAGES/APT-A.png)
-![APT-B](/images/NOAAIMAGES/APT-B.png)
-![MCIR](/images/NOAAIMAGES/avhrr_3_rgb_MCIR.png)
-![Rain](/images/NOAAIMAGES/avhrr_3_rgb_MCIR_Rain_(Uncalibrated).png)
-![Thermal](/images/NOAAIMAGES/avhrr_3_rgb_Thermal_Channel.png)
-![Map](/images/NOAAIMAGES/channel_4_projected.png)
+![APT-A](/assets/NOAAIMAGES/APT-A.png)
+![APT-B](/assets/NOAAIMAGES/APT-B.png)
+![MCIR](/assets/NOAAIMAGES/avhrr_3_rgb_MCIR.png)
+![Rain](/assets/NOAAIMAGES/avhrr_3_rgb_MCIR_Rain_(Uncalibrated).png)
+![Thermal](/assets/NOAAIMAGES/avhrr_3_rgb_Thermal_Channel.png)
+![Map](/assets/NOAAIMAGES/channel_4_projected.png)
 
 ### METEOR
 
-![RGB](/images/METEORIMAGES/msu_mr_rgb_221.png)
-![MSA](/images/METEORIMAGES/msu_mr_rgb_MSA.png)
-![BW](/images/METEORIMAGES/MSU-MR-1.png)
-![MAP](/images/METEORIMAGES/rgb_msu_mr_rgb_321_projected.png)
+![RGB](/assets/METEORIMAGES/msu_mr_rgb_221.png)
+![MSA](/assets/METEORIMAGES/msu_mr_rgb_MSA.png)
+![BW](/assets/METEORIMAGES/MSU-MR-1.png)
+![MAP](/assets/METEORIMAGES/rgb_msu_mr_rgb_321_projected.png)
 
 ---
 
