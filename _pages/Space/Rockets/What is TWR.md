@@ -1,5 +1,5 @@
 ---
-title: "Publishing your blog post"
+title: "What is Thrust to Weight Ratio (TWR) in Rockets?"
 tags:
     - Explanation
 
