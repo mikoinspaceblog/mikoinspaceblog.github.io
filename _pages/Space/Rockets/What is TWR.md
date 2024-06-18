@@ -56,6 +56,6 @@ TWR= 735,750N/800,000N ≈ 1.09
 
 ---
 
-![MIS Logo](/images/miko.png)
+![MIS Logo](/assets/miko.png)
 
 This has been an MIS Blog Post.
