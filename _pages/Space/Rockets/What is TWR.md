@@ -3,7 +3,7 @@ title: "Publishing your blog post"
 tags:
     - Explanation
 
-date: "2024-02-04"
+date: "2024-06-18"
 thumbnail: "/assets/img/thumbnail/sample.png"
 bookmark: true
 ---
