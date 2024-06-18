@@ -118,6 +118,6 @@ In SatDump, select the Satellite you just recorded and import your file, then si
 
 ---
 
-![MIS Logo](/images/miko.png)
+![MIS Logo](/assets/miko.png)
 
 This has been an MIS Blog Post.
