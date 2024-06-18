@@ -1,6 +1,11 @@
 ---
-layout: post
-title: What is Thrust to Weight Ratio (TWR) in Rockets?
+title: "Publishing your blog post"
+tags:
+    - Explanation
+
+date: "2024-02-04"
+thumbnail: "/assets/img/thumbnail/sample.png"
+bookmark: true
 ---
 
 Thrust to Weight Ratio (TWR) is a dimensionless ratio of thrust to weight of a rocket, jet engine, propeller engine, or a vehicle propelled by such an engine that is an indicator of the performance of the engine or vehicle.
