@@ -1,12 +1,12 @@
-title: example.com
-description: "Satellite - jekyll blog theme"
+title: MikoInSpace - Blog all about Space and Satellites
+description: "Blog all about Space and Satellites"
 logo_img: "/assets/img/favicon.webp"
-profile_img: "/assets/img/profile.webp"
+profile_img: "/assets/img/miko.png"
 
 # Social Links
-email: example@gmail.com
-github_username: github
-twitter_username: twitter
+email: mikoinspace@gmail.com
+github_username: MikoInSpace
+twitter_username: mikoinspace_
 instagram_username: instagram
 linkedin_username: linkedin
 facebook_username: facebook
