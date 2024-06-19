@@ -14,9 +14,9 @@ Delta-V (Δv) represents the maximum change in velocity a rocket can achieve.
 
 It is a measure of the rocket's capability to perform maneuvers such as launching, orbiting, or landing.
 
-## Important
+## Importance
 
-Delta-V (Δv) is crutial for any mission, since you need a certain amount of it to perform the mission, therefor it is calculated beforehand.0
+Delta-V (Δv) is crutial for any mission, since you need a certain amount of it to perform the mission, therefor it is calculated beforehand
 
 ## How to Calculate Delta-V (Δv)
 
