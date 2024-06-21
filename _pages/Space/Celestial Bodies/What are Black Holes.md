@@ -42,5 +42,10 @@ The Accretion disc is a disc of superheated gas and dust which whirls around a b
 
 The Innermost stable orbit is the inner edge of an accretion disc, it is the last point where an object can orbit safely without falling past the point of no return
 
+---
+
+![MIS Logo](/assets/miko.png)
+
+This has been an MIS Blog Post.
 
 
