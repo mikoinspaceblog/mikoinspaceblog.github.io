@@ -1,5 +1,5 @@
 ---
-title: "How to destroy a Black Hole"
+title: "How to destroy Black Holes"
 tags:
     - Explanation
     - Guide
