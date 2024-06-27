@@ -10,11 +10,11 @@ twitter_username: mikoinspace_
 instagram_username: instagram
 
 # External API
-giscus_repo: "byanko55/jekyll-theme-satellite"
-giscus_repoId: "R_kgDOJ6fqWg"
+giscus_repo: "mikoinspaceblog/mikoinspaceblog.github.io"
+giscus_repoId: "R_kgDOMLGL7Q"
 giscus_category: "Q&A"
-giscus_categoryId: "DIC_kwDOJ6fqWs4Cc7p7"
-goatcounter_code: byanko77
+giscus_categoryId: "DIC_kwDOMLGL7c4Cgayn"
+goatcounter_code: mikoinspace
 google_analytics:
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.
