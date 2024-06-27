@@ -24,7 +24,9 @@ The current GOES East (GOES-16) will become an on-orbit backup.
 ## Details
 
 Liftoff happened at 5:26 PM EDT without problems.
+
 Both of the side boosters were decoupled at about T+00:02:30, Booster 1 and 2 Landed at about T+00:08:09 and T+00:08:14 respectively.
+
 The Satellite was successfully dropped off in Geostationary Orbit at T+04:30:11, it has a planned lifespan of about 15 years.
 
 ---
