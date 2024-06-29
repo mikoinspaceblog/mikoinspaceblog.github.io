@@ -2,6 +2,7 @@
 title: "NOAA's newest Satellite Launch"
 tags:
     - Explanation
+    - Summary
 date: "2024-06-27"
 thumbnail: "/assets/img/thumbnail/GOES-U.png"
 bookmark: true
