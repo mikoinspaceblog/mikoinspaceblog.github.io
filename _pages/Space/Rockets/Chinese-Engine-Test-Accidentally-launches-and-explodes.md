@@ -3,7 +3,7 @@ title: "Chinese Engine Test Accidentally launches and explodes."
 tags:
     - Explanation
 date: "2024-07-01"
-thumbnail: "/assets/img/thumbnail/TESTDISASTER.png"
+thumbnail: "/assets/img/thumbnail/ENGINEDISASTER.png"
 bookmark: true
 ---
 
