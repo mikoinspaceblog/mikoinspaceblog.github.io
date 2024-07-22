@@ -29,9 +29,13 @@ There are a few differences between NOAA and Meteor M2.
 The most obvious one is that NOAA uses analogue tones to transmit the images while Meteor M2 uses digital signals.
 
 They transmit different "types" of images, most commonly theres APT, LRPT and HRPT.
+
 **APT** (Automatic Picture Transmission) is an analog signal with 2 analog channels, the image resolution is also quite low. [Used by NOAA]
+
 **LRPT** (Low Rate Picture Transmission) is a digital signal with 3 digital channels, it is also a higher resolution than **APT**. [Used by Meteor M2]
+
 **HRPT** (High Rate Picture Transmission) has a greater bandwidth than **APT** and **LRPT**, meaning you can get more channels and a higher resolution. [Used by both]
+
 Meteor M2 Satellites also break more often or undergo maintinance.
 
 ## Receiving
