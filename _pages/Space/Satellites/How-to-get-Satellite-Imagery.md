@@ -3,98 +3,156 @@ title: "How to receive images directly off of Satellites"
 tags:
     - Explanation
     - Guide
-date: "2024-06-18"
+date: "2024-11-23"
 thumbnail: "/assets/img/thumbnail/NOAA.png"
 bookmark: true
 ---
 
 ## General Understanding
 
-Getting Images off of Satellites is pretty easy, all you need is a simple antenna, a Software Defined Radio (SDR) and a computer or even android mobile device.
+Most weather satellites like [NOAA](https://www.noaa.gov/) or Meteor M2 transmit images back down to earth over VHF or UHF radio bands.
 
-The Satellites that are most used for this hobby are the American NOAA Satellites and the Russian Meteor M2 Satellites.
+These are all free to receive without a license, just don't transmit on frequencies you don't know unless you know exactly what you are doing.
 
-Both of them are in a low sun-synchronous and almost polar orbit, meaning the countries they fly over will vary.
+They send down images of the earth on different light spectrums and with different data like rain and thermal data overlayed, these can be used for Meteorology or just as a thing you can brag to your friends about.
 
-![Orbit](/assets/orbit.gif)
+There are several methods to receive these radio transmissions, from the easy way with an SDR(Software Defined Radio) and a Laptop to the hard ways with just a HAM Radio and a phone.
 
-They constantly transmit "images" of the surface of the earth, however they are not captured like typical images.
+All you need is a device capable of receiving these frequencies and a device capable of decoding the received transmissions.
 
-They are being captured by a sort of "scanner" capturing one line of pixels at a time and instantly transmitting them.
+In this guide we will go into how to receive analog NOAA APT images, meaning we will just need some simple equipment you might just have laying around at home.
 
-## Differences
+## What is NOAA APT?
 
-There are a few differences between NOAA and Meteor M2.
+NOAA Weather Satellites are a series of satellites sent up by the National Oceanic and Atmospheric Administration for the purpose of further studying our earth and for Meteorology Purposes.
 
-The most obvious one is that NOAA uses analogue tones to transmit the images while Meteor M2 uses digital signals.
+They send down images using APT, (Automatic Picture Transmission) thissystem is an analog image transmission system developed for use on weather satellites.
 
-They transmit different "types" of images, most commonly theres APT, LRPT and HRPT.
+They also send down images using other types of Transmission but we won't go into that since this is a beginners guide.
 
-**APT** (Automatic Picture Transmission) is an analog signal with 2 analog channels, the image resolution is also quite low. [Used by NOAA]
+## Receiving NOAA APT using an SDR, a Laptop and a V-Diapole Antenna (Easy Method, $30 - $90)
 
-**LRPT** (Low Rate Picture Transmission) is a digital signal with 3 digital channels, it is also a higher resolution than **APT**. [Used by Meteor M2]
+This is the easy method, it costs anywhere between $30 and $90 depending on if you want the good equipment and if you want to DIY some stuff.
 
-**HRPT** (High Rate Picture Transmission) has a greater bandwidth than **APT** and **LRPT**, meaning you can get more channels and a higher resolution. [Used by both]
+Let's first talk about what a Software Defined Radio(SDR) is, an SDR is a device that digitally receives radio signals, the one I'm going to be referencing in this guide is the [RTL-SDR V4](https://www.rtl-sdr.com/V4/), a USB dongle type SDR, which you simply plug into your Computer, get some software like [SDR++](https://www.sdrpp.org/) or [SDR#](https://airspy.com/download/) running (Personally I recommend SDR++) and you're ready to go besides for some simple driver installations.
 
-Meteor M2 Satellites also break more often or undergo maintinance.
+Another thing you will need with an SDR is an antenna with the correct connector.
 
-## Receiving
+In this case we will be using a [V-Diapole Antenna](https://en.wikipedia.org/wiki/Dipole_antenna) (also commonly refferred to as a "Rabbit Ears Antenna") since it is the cheapest and easiest to use in this scenario.
 
-### Hardware
+You can either build this kind of Antenna yourself (there are lots of guides for that on the internet) or buy one like the [RTL-SDR Blog Multipurpose Dipole Antenna Kit](https://www.rtl-sdr.com/using-our-new-dipole-antenna-kit/)
 
-Receiving these images is quite simple, the most basic setup you could have consists of a V-Diapole antenna, something like an RTL-SDR dongle as an SDR and an old laptop.
+Now let's talk about how to set up the software.
 
-You can get a kit with the RTL-SDR BLOG V4 and RTL-SDR V-Diapole for as low as 50€ on a website like amazon.
+In this case, we will be using SDR++.
 
-![Kit](/assets/RTL-SDR-V4-with-Dipole-Antenna-Kit.png)
+To set up your RTL-SDR BLOG V4, please use [this guide](https://www.rtl-sdr.com/rtl-sdr-quick-start-guide/) but do not complete Step 13 and further since we will be using SDR++.
 
-### Where is the Satellite?
+Now download SDR++ Nightly from [this page](https://www.sdrpp.org/), extract the downloaded file and open it, it should look something like this: 
 
-To know where the satellite currently is and when it next passes over your location you can use websites like [N2YO](https://n2yo.com) or an app like [Look4Sat](https://github.com/rt-bishop/Look4Sat)
+![FolderInside](/assets/SDRPPFOLDER.PNG)
 
-If you are using a V-Diapole Antenna for receiving, it might be smart to orient it to where the satellite is, which is easy when looking something like [Look4Sat](https://github.com/rt-bishop/Look4Sat) but might be harder when using [N2YO](https://n2yo.com).
+Go ahead and open sdr++.exe
 
-### Software for Receiving
+This is what you should be greeted with:
 
-You need something like [SDR++](https://www.sdrpp.org/) to actually use the SDR.
+![SDRPPSTART](/assets/SDRPPFIRST.PNG)
 
-If you have a pass coming up soon, position yourself in a relatively free area where you can maintain line of sight with the satellite.
+Firstly, select RTL-SDR as a Source
 
-Plug your SDR into your laptop and start up your software, if you are using SDR++ then the process is quite simple.
+![SELECTSDR](/assets/SELECTSDR.png)
 
-1.  Simply select your SDR using the Source menu from the side
+Now, select your SDR and change the sample rate to the highest possible (for example 2.4 MhZ or 3.2 MhZ), this will ensure you have the highest possible quality.
 
-![Source Menu](/assets/SourceMenuSDR.png)
+Also slide the "Gain" slides to the maximum.
 
-2. Put the gain up to max
+![SELECTURANDSR](/assets/SELECTURANDSR.png)
 
-Now the process varies between NOAA and Meteor
+Now that we have our software set up, we simply need to choose which Satellite to receive and learn how to track it.
 
-### NOAA
+At the time of writing this there are 3 functional NOAA Satellites you can receive from.
 
-For NOAA, you should scroll down to recording settings and select audio
+NOAA 15, 18 and 19.
 
-![Source Menu](/assets/AUDIO.png)
+In this case I will be using NOAA 19, but you should just use whichever Satellite passes over you at the most convinient time.
 
-As soon as you see a signal like this you should press record, when it dissapears you should wait a bit and then stop recording, after this go to the decoding step.
+To see the frequencies of these Satellites and where they are/when they will pass over your location, you should use [N2YO](https://www.n2yo.com/).
 
-![Source Menu](/assets/NOAA.png)
+After searching for whichever Satellite you want to receive, you should land on a page similar to this:
 
-### METEOR M2
+![N2YOFIRST](/assets/N2YOFIRST.png)
 
-For Meteor M2, you should select Baseband and scroll back up to select "IQ Correction"
+The most important information we need to extract is the time of the pass, the Maximum Elevation and the frequency.
 
-![Source Menu](/assets/BASEBAND.png)
+![N2YOINFO](/assets/N2YOINFO.png)
 
-As soon as you see a signal like this you should press record, when it dissapears you should wait a bit and then stop recording, after this go to the decoding step.
+1: Start time, this is the time the Satellite will start to be visible/able to be received
 
-![Source Menu](/assets/METEOR.png)
+2: Max elevation, this is the Maximum elevation in degrees the Satellite will go over the horizon, 1° meaning just barely and 90° meaning directly overhead, I would not recommend trying passes with a Max. Elevation of under 25°
 
-### Decoding
+3: Frequency, the first frequency (in this case 137.100MhZ) is the APT Frequency for this particular Satellite.
 
-For decoding, the best option would be [SatDump](https://www.satdump.org/)
+Now, to actually receive the Satellite you will most likely need to go outside.
 
-In SatDump, select the Satellite you just recorded and import your file, then simply press on decode and watch the images flow in.
+So bring a laptop, your radio equipment and your phone with you and set it up in an area with a mostly clear horizon.
+
+Now get an app like [Look4Sat](https://github.com/rt-bishop/Look4Sat) on your phone, this will help you correctly track the Satellite with your Antenna to get the best frequency possible.
+
+Set your Radio setting to WFM on SDR++, then adjust your recording settings to either Audio or Baseband, Audio will have the smallest filesize but a tiny bit of quality loss and Baseband will have a big filesize but you will be able to do the most with it.
+
+![RADIOSETTINGSSDRPP](/assets/SDRPPRADIOSETTINGS.PNG)
+
+Once the satellite starts being visible according to Look4Sat, go ahead and press on Record on SDR++ and start tracking the Satellite with your antenna like this:
+
+![TRACKSAT](/assets/TRACKSAT.PNG)
+
+Each V-Diapole antenna side should be around 53cm long and there should be an angle of about 120° between them.
+
+Now you should get a signal that looks like this on SDR++:
+
+![NOAASIG](/assets/NOAA.png)
+
+If you are using the Audio recording setting you should adjust your Bandwidth tightly around the signal, the bandwidth is the little white selection field around your cursor.
+
+This will make the signal get a little better.
+
+After the pass, stop the recording and download [SatDump](https://www.satdump.org/), we will use this to decode the Signal we just got into an image.
+
+Extract the downloaded file and open satdump-ui.exe
+
+This is what you should be greeted with:
+
+![SATDUMPFIRST](/assets/SATDUMPFIRST.PNG)
+
+Firstly, search for "NOAA APT" in the search bar:
+
+![NOAAPTSATDUMP](/assets/SATDUMPNOAAAPT.PNG)
+
+Now select your recording, where you want the images to be stored and if you recorded in baseband or audio.
+
+Also select which NOAA Satellite you recorded and turn off "SDR++ Noise Reduction", Samplerate should be set automatically.
+
+Then press Start to start decoding.
+
+You should first see something like this:
+
+![DECODING1](/assets/DECODING.PNG)
+
+Then it should turn into something like this:
+
+![DECODING2](/assets/DECODING2.PNG)
+
+And after a tiny bit it should send you back to the start screen, this means your decoded images are in the folder you set as output.
+
+This is what you should expect as an output in the folder:
+
+![DECODEDFOLDER](/assets/DECODEDFOLDER.PNG)
+
+Here you see your decoded image in lots of different channels like Thermal, with rain overlay, with a map overlayed, etc.
+
+Congrats, you have done it!
+
+You have received images from a Weather Satellite!
 
 ---
 
