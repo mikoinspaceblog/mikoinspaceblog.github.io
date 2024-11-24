@@ -120,7 +120,7 @@ FOR DECODING PLEASE GO TO THE HOW TO USE SATDUMP SEGMENT AT THE END OF THIS GUID
 
 ## Receiving NOAA APT using a HAM Radio, an Android Device/Laptop and an app (Hard Method, $20 - $50)
 
-This method is slightly harder since you won't be using dedicated equipment, all you will need is a [HAM Radio](https://de.wikipedia.org/wiki/Ham_Radio) like a [Baofeng](https://www.baofengradio.com/) or other cheap chinese ones, all they need to do is be able to receive frequencies around 137MhZ.
+This method is slightly harder since you won't be using dedicated equipment, all you will need is a [HAM Radio](https://en.wikipedia.org/wiki/Ham_Radio) like a [Baofeng](https://www.baofengradio.com/) or other cheap chinese ones, all they need to do is be able to receive frequencies around 137MhZ.
 
 All you need the Android Device or Laptop for is recording and decoding the received signal and tracking the satellite.
 
