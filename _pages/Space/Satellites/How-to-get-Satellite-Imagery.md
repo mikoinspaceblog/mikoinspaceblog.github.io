@@ -116,6 +116,68 @@ If you are using the Audio recording setting you should adjust your Bandwidth ti
 
 This will make the signal get a little better.
 
+FOR DECODING PLEASE GO TO THE HOW TO USE SATDUMP SEGMENT AT THE END OF THIS GUIDE
+
+## Receiving NOAA APT using a HAM Radio, an Android Device/Laptop and an app (Hard Method, $20 - $50)
+
+This method is slightly harder since you won't be using dedicated equipment, all you will need is a [HAM Radio](https://de.wikipedia.org/wiki/Ham_Radio) like a [Baofeng](https://www.baofengradio.com/) or other cheap chinese ones, all they need to do is be able to receive frequencies around 137MhZ.
+
+All you need the Android Device or Laptop for is recording and decoding the received signal and tracking the satellite.
+
+You can also do the tracking with an Apple device by using [N2YO.com](https://n2yo.com)
+
+For this, first download [Look4Sat](https://github.com/rt-bishop/Look4Sat) and [Satdump](https://www.satdump.org/) on your Android Device.
+
+Look4Sat is used as a way of tracking the Satellite and Satdump is used for decoding the received signal.
+
+Also download any app you can record audio on.
+
+Let's first look at how to use Look4Sat, when you open the app you should be greeted with this screen:
+
+<img src="/assets/LOOK4SATFIRST.png" alt="LOOKSATFIRST" width="540" height="1200">
+
+To start, press on settings
+
+You should now get to this screen, on which you should press the buttons indicated in the image below, this will get your current location over GPS and update the list of available satellites to track.
+
+You can however also just enter your location manually.
+
+<img src="/assets/LOOK4SATSET.png" alt="LOOKSATSET" width="540" height="1200">
+
+Now press the back button to get back to the original screen, then press the button indicated below to get to a list of satellites that are available to be tracked:
+
+<img src="/assets/LOOK4SATFIRSTINT.png" alt="LOOKSATSET" width="540" height="1200">
+
+You will now see a list with a lot of Satellites available.
+
+In this case we will search for NOAA in the search bar above and select the Satellites NOAA 15, 18 and 19 since these are NOAA Satellites that are available to be received using VHF/APT.
+
+In this guide we will focus on NOAA 19.
+
+After pressing on the two checkmarks at the bottom after selecting the Satellites you should see a list of passes.
+
+Go ahead and press on a pass that is at a convinient time for you.
+
+I don't recommend choosing a pass with an elevation of below 25° since you wont be able to receive them well.
+
+Elevation is the amount of ° the Satellite will go over the horizon, 1° meaning just barely and 90° meaning directly overhead
+
+<img src="/assets/LOOK4SATTRACK.png" alt="LOOKSATTRACK" width="540" height="1200">
+
+In the middle you will see the Satellite's path and current location if it is passing overhead, this screen will use your device's sensors to give you a cursor, that way you can see exactly where the Satellite is.
+
+Now get your HAM Radio and tune it to the frequency shown on this screen under APT, it will most likely be 137.XYZ.
+
+After doing that, get to an area where the horizon is mostly clear of trees or building and wait for the pass to start, when the pass starts use your phone to record the tones you will be hearing over the HAM Radio.
+
+For best reception, hold your HAM Radio high into the air.
+
+After the pass is over you will now save this recording and open Satdump on your Phone or Laptop.
+
+## How to use SatDump
+
+While this segment is demonstrated on a Computer, the steps should be the same on your Mobile Device.
+
 After the pass, stop the recording and download [SatDump](https://www.satdump.org/), we will use this to decode the Signal we just got into an image.
 
 Extract the downloaded file and open satdump-ui.exe
